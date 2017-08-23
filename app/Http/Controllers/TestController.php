@@ -30,17 +30,14 @@ class TestController extends Controller
 
     if($validator->fails())
     {
-      if($name) == NULL)
+      if($name == NULL)
       {return Response::json(['error' => 'Please fill out your name.']);
       }
-      elseif($age) == NULL)
+      else if($age == NULL)
       {return Response::json(['error' => 'Please fill out your age.']);
       }
     }
 
-    $name = $request->input('name');
-    $age = $request->input('age');
-    $home = $request->input('home');
 
     $sentence = "Hi! My name is " . $name . " and I am" . $age . " years old. I live in " . $home . ".";
 
