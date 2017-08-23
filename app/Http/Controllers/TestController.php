@@ -24,9 +24,18 @@ class TestController extends Controller
 
     $validator = Validator::make(Purifier::clean($request->all()), $rules);
 
+    $name = $request->input('name');
+    $age = $request->input('age');
+    $home = $request->input('home');
+
     if($validator->fails())
     {
-      return Response::json(['error' => 'Please fill out all fields.']);
+      if($name) == NULL)
+      {return Response::json(['error' => 'Please fill out your name.']);
+      }
+      elseif($age) == NULL)
+      {return Response::json(['error' => 'Please fill out your age.']);
+      }
     }
 
     $name = $request->input('name');
