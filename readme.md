@@ -2,7 +2,7 @@
 
 A Laravel-Boilerplate for the Technopathic Full-Stack Web Development series was used in the creation of this site.
 
-This API-Routes is created for Back-End database authentication.
+This API-Routes was created to learn to create routes to the database.
 
 ## Getting Started
 To reuse this code as a framework, fork this repo and clone it onto your local computer. Then run `composer install` to install all of the necessary libraries.
